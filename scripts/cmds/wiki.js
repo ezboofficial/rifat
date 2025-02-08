@@ -19,7 +19,7 @@ module.exports = {
   },
   onStart: async function ({ event, message, getLang, usersData, api, args }) {
     let content = args.join(" ");
-    let url = "https://vi.wikipedia.org/w/api.php";
+    let url = "https://en.wikipedia.org/w/api.php";
     if (args[0] === "en") {
       url = "https://en.wikipedia.org/w/api.php";
       content = args.slice(1).join(" ");
